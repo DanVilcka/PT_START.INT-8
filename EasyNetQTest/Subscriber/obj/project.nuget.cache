@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "lDZFv8Yrc4m1ak7KDH74sL6HKZnDB709xeY8RTCSwB6b051WBtZdInPsjIYYH2/HQM1AJw5wDpflWVcylpnXzQ==",
+  "success": true,
+  "projectFilePath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/EasyNetQTest/Subscriber/Subscriber.csproj",
+  "expectedPackageFiles": [
+    "/Users/daniilvilchinskiy/.nuget/packages/easynetq/7.8.0/easynetq.7.8.0.nupkg.sha512",
+    "/Users/daniilvilchinskiy/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/daniilvilchinskiy/.nuget/packages/rabbitmq.client/6.8.1/rabbitmq.client.6.8.1.nupkg.sha512",
+    "/Users/daniilvilchinskiy/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/daniilvilchinskiy/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

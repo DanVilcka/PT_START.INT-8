@@ -1,0 +1,184 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/EasyNetQTest/Subscriber/Subscriber.csproj": {}
+  },
+  "projects": {
+    "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/EasyNetQTest/Subscriber/Subscriber.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/EasyNetQTest/Subscriber/Subscriber.csproj",
+        "projectName": "Subscriber",
+        "projectPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/EasyNetQTest/Subscriber/Subscriber.csproj",
+        "packagesPath": "/Users/daniilvilchinskiy/.nuget/packages/",
+        "outputPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/EasyNetQTest/Subscriber/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/daniilvilchinskiy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Fibonacci/Fibonacci.csproj": {
+                "projectPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Fibonacci/Fibonacci.csproj"
+              },
+              "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Messages/Messages.csproj": {
+                "projectPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Messages/Messages.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Fibonacci/Fibonacci.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Fibonacci/Fibonacci.csproj",
+        "projectName": "Fibonacci",
+        "projectPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Fibonacci/Fibonacci.csproj",
+        "packagesPath": "/Users/daniilvilchinskiy/.nuget/packages/",
+        "outputPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Fibonacci/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/daniilvilchinskiy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Messages/Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Messages/Messages.csproj",
+        "projectName": "Messages",
+        "projectPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Messages/Messages.csproj",
+        "packagesPath": "/Users/daniilvilchinskiy/.nuget/packages/",
+        "outputPath": "/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/Messages/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/daniilvilchinskiy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

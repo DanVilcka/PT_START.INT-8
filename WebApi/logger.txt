@@ -1,0 +1,5 @@
+Now listening on: http://localhost:5278
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi
+Application is shutting down...

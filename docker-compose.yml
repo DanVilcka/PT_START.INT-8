@@ -1,37 +1,41 @@
-version: "3.8"
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
 services:
-
   fibonacci:
-    container_name: fibonacci
+    image: fibonacci
     build:
-      dockerfile: /Fibonacci/Dockerfile
-
+      context: .
+      dockerfile: Fibonacci/Dockerfile
   rabbitmq:
-    container_name: rabbitmq
-    build:
-      dockerfile: /RabbitMQServer/Dockerfile
-      
-  webapi:
-    container_name: webapi
-    build:
-      dockerfile: /WebApi/Dockerfile
+    image: rabbitmq:3.13-management
+    container_name: 'rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
     depends_on:
-      - rabbitmq
       - fibonacci
-
-  httpclient:
-    container_name: httpclient
+  webapi:
+    image: webapi
     build:
-      dockerfile: /HttpClient/Dockerfile
-    restart: on-failure
-    entrypoint: ["dotnet", "run"]
+      context: .
+      dockerfile: WebApi/Dockerfile
+    ports:
+      - 5278:8080
     depends_on:
+      - fibonacci
+      - rabbitmq
+    command: sh -c './wait-for localhost:5672 -t 20'
+  httpclient:
+    image: httpclient
+    build:
+      context: .
+      dockerfile: HttpClient/Dockerfile
+    depends_on:
+      - fibonacci
       - rabbitmq
       - webapi
-      - fibonacci
-    links: 
-        - rabbit
-
-networks:
-  fibonacci_network:
-    driver: bridge

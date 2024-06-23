@@ -11,7 +11,6 @@
           "EasyNetQ": "7.8.0",
           "EasyNetQ.DI.Microsoft": "7.8.0",
           "Fibonacci": "1.0.0",
-          "Messages": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.5.0"
@@ -133,11 +132,6 @@
         "runtime": {
           "Fibonacci.dll": {}
         }
-      },
-      "Messages/1.0.0": {
-        "runtime": {
-          "Messages.dll": {}
-        }
       }
     }
   },
@@ -253,11 +247,6 @@
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "Fibonacci/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

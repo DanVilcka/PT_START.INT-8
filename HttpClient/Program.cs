@@ -21,7 +21,7 @@ namespace HttpClient
         /// <returns></returns>
         static async Task Main(string[] args)
         {
-            var AsyncCount = Convert.ToInt32(args[0]);
+            var AsyncCount = int.Parse(args[0]);
 
             var toServer = new Transfer2Server();
             var locServer = new FibonacciClass();
@@ -29,12 +29,18 @@ namespace HttpClient
 
             try
             {
-                using var bus = RabbitHutch.CreateBus("host=localhost");
+                using var bus = RabbitHutch.CreateBus("host=localhost:5672;username=guest;password=guest");
                 await bus.PubSub.SubscribeAsync<FibonnaciValue>(subId, toServer.Recieve);
             }
-            catch(TaskCanceledException e)
+            catch (AggregateException exp)
             {
-                throw e;
+                foreach (Exception e in exp.InnerExceptions)
+                {
+                    if (e is TaskCanceledException)
+                        Console.WriteLine("Операция прервана");
+                    else
+                        Console.WriteLine(e.Message);
+                }
             }
             
             var tasks = Enumerable

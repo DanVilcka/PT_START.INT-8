@@ -22,7 +22,7 @@ namespace HttpClient
 
         public void Recieve(FibonnaciValue result)
         {
-            if (pendingRequests.TryRemove(result.id, out var tcs))
+            if (pendingRequests.TryRemove(result.Id, out var tcs))
             {
                 Console.WriteLine($"Receiving {result}");
                 tcs.SetResult(result);
@@ -53,7 +53,7 @@ namespace HttpClient
             
             stop.Register(() => tcs.TrySetCanceled(stop));
 
-            if (pendingRequests.TryAdd(fibVal.id, tcs))
+            if (pendingRequests.TryAdd(fibVal.Id, tcs))
             {
                 var response = await client.SendAsync(request, stop);
                 if (response.StatusCode != HttpStatusCode.OK)
@@ -66,7 +66,7 @@ namespace HttpClient
             }
             else
             {
-                throw new Exception($"Can't add tcs for {(fibVal.id, fibVal.n)}");
+                throw new Exception($"Can't add tcs for {(fibVal.Id, fibVal.N)}");
             }
         }
     }

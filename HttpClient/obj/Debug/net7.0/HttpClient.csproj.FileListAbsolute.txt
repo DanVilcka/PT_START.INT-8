@@ -24,8 +24,6 @@
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/obj/Debug/net7.0/HttpClient.pdb
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/obj/Debug/net7.0/HttpClient.genruntimeconfig.cache
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/obj/Debug/net7.0/ref/HttpClient.dll
-/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/bin/Debug/net7.0/Messages.dll
-/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/bin/Debug/net7.0/Messages.pdb
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/obj/Debug/net7.0/HttpClient.csproj.CopyComplete
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/bin/Debug/net7.0/EasyNetQ.dll
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/HttpClient/bin/Debug/net7.0/RabbitMQ.Client.dll

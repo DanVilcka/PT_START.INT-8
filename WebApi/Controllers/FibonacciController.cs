@@ -1,4 +1,4 @@
- using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,12 +32,12 @@ namespace WebApi.Controllers
         {
             var calculate_Task = Task.Run(() => {
                 var next = FibonacciClass.CalculateNext(current);
-                logger.LogInformation($"Sending fib({next.n}) -> {next.value}, id = {current.id}");
+                logger.LogInformation($"Sending fib({next.N}) -> {next.Value}, id = {current.Id}");
                 return bus.PubSub.PublishAsync(next);
             });
             
             calculate_Task.ConfigureAwait(false);
-            var message = $"Requested fib({current.n + 1}), id = {current.id}";
+            var message = $"Requested fib({current.N + 1}), id = {current.Id}";
             logger.LogInformation(message);
             return StatusCode(200, message);
         }

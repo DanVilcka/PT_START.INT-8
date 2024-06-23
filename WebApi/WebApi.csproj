@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Messages\Messages.csproj" />
     <ProjectReference Include="..\Fibonacci\Fibonacci.csproj" />
   </ItemGroup>
 

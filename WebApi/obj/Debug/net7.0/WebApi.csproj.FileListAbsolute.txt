@@ -31,8 +31,6 @@
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/obj/Debug/net7.0/WebApi.pdb
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/obj/Debug/net7.0/WebApi.genruntimeconfig.cache
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/obj/Debug/net7.0/ref/WebApi.dll
-/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/bin/Debug/net7.0/Messages.dll
-/Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/bin/Debug/net7.0/Messages.pdb
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/bin/Debug/net7.0/EasyNetQ.dll
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/bin/Debug/net7.0/EasyNetQ.DI.Microsoft.dll
 /Users/daniilvilchinskiy/Desktop/Programming/Courses/PT-START/INT-8/WebApi/bin/Debug/net7.0/RabbitMQ.Client.dll
